@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="lgtv" 
+		  id="lgtv" 
+		  class="net.developia.spring01.di2.LgTV" 
+		  p:speaker-ref="orange" 
+		  init-method="init"
+		  lazy-init="true"/>
+		  
+	
+	<bean id="orange" 
+		  class="net.developia.spring01.di2.OrangeSpeaker" />
+
+	<bean name="hyundai" id="hyundaitv" class="net.developia.spring01.di2.HyundaiTV" init-method="init">
+		<property name="speaker" ref="harman" />
+	</bean>
+	
+	<bean id="harman" 
+		  class="net.developia.spring01.di2.HarmanSpeaker" />
+	
+	<bean id="message" 
+		  class="net.developia.spring01.di2.MessageBean" 
+		  p:message="실수란 신을 용서하는 인간의 행위이다" />
+	
+</beans>
