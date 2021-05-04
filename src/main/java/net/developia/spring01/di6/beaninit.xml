@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<context:component-scan base-package="net.developia.spring01.di6" />
+	<context:property-placeholder location="net/developia/spring01/di6/system.properties"/>
+	
+	<!-- 	
+	<bean name="messageBean" class="net.developia.spring01.di4.MessageBeanImpl">
+		<property name="name">
+			<value>홍길동</value>
+		</property>
+		<property name="greeting">
+			<value>안녕하신가.</value>
+		</property>
+		<property name="fileOutputter" ref="fileOutputter"/>
+	</bean>
+	
+	<bean name="messageBean2" class="net.developia.spring01.di4.MessageBeanImpl">
+		<property name="name" value="홍길동" />
+		<property name="greeting" value="안녕하신가" />
+	</bean>
+
+	<bean name="messageBean3" 
+		  class="net.developia.spring01.di4.MessageBeanImpl"
+		  p:name="홍길동"
+		  p:greeting="안녕하신가" />
+		  
+	<bean name="fileOutputter"
+		  class="net.developia.spring01.di4.FileOutputterImpl"
+		  p:fileName="output.txt" /> 
+	-->
+
+</beans>

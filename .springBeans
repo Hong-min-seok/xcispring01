@@ -9,10 +9,9 @@
 	<configs>
 		<config>src/main/java/net/developia/spring01/di1/beaninit.xml</config>
 		<config>src/main/java/com/spring/ex01/person.xml</config>
+		<config>src/main/java/net/developia/spring01/di4/beaninit.xml</config>
 	</configs>
 	<autoconfigs>
-		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>
-		<config>src/main/webapp/WEB-INF/spring/root-context.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>

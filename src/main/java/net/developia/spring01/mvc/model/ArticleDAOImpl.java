@@ -145,6 +145,7 @@ public class ArticleDAOImpl implements ArticleDAO {
 				articleDTO.getTitle(),
 				articleDTO.getName(),
 				articleDTO.getContent(),
+				articleDTO.getNo(),
 				articleDTO.getPassword(),
 		};
 		return jdbcTemplate.update(sql.toString(), args);

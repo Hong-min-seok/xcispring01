@@ -27,4 +27,10 @@
 	
 	<beans:bean name="/insert" class="net.developia.spring01.mvc.controller.ArticleInsert" />
 	<beans:bean name="/insertAction" class="net.developia.spring01.mvc.controller.ArticleInsertAction" />
+	<beans:bean name="/list" class="net.developia.spring01.mvc.controller.ArticleList" />
+	<beans:bean name="/detail" class="net.developia.spring01.mvc.controller.ArticleDetail" />
+	<beans:bean name="/delete" class="net.developia.spring01.mvc.controller.ArticleDelete" />
+	<beans:bean name="/deleteAction" class="net.developia.spring01.mvc.controller.ArticleDeleteAction" />
+	<beans:bean name="/update" class="net.developia.spring01.mvc.controller.ArticleUpdate" />
+	<beans:bean name="/updateAction" class="net.developia.spring01.mvc.controller.ArticleUpdateAction" />
 </beans:beans>

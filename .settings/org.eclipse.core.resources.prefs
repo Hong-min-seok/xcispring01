@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
+encoding//src/main/java/net/developia/spring01/mvc/controller/ArticleDeleteAction.java=UTF-8
 encoding//src/main/java/net/developia/spring01/mvc/controller/ArticleInsertAction.java=UTF-8
+encoding//src/main/java/net/developia/spring01/mvc/controller/ArticleUpdateAction.java=UTF-8
